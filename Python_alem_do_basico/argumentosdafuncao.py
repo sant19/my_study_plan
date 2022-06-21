@@ -43,3 +43,36 @@ display('$', 5)
 # Argumentos padrão em print()
 print('Hello', 'there')
 print('Hello', 'there', sep='###')
+
+
+# Argumento variável
+def greet(*mensages):
+    print(mensages)
+
+
+# Chamando greet() com 1 argumento
+greet('Hi')
+
+# Chamando greet() com 2 argumentos
+greet('Hi', 'Hello')
+
+# Chamando greet() sem nenhum argumento
+greet()
+
+
+# Exemplo adicionar números
+def add_numbers(*numbers):
+    # Calcular a soma de um tupla
+    total = 0
+    for number in numbers:
+        total = total + number
+    return total
+
+
+# Chama add_numbers com 2 argumentos
+result = add_numbers(5, 10)
+print(result)
+
+# Chama add_numbers com 3 argumentos
+result = add_numbers(5, 10, 20)
+print(result)
