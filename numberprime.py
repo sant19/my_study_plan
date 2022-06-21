@@ -43,6 +43,8 @@ def check_prime(n):
         if (n % i) == 0:
             return False
     return True
+
+
 n1 = 50
 n2 = 100
 # iterating loop from 50 to 100
