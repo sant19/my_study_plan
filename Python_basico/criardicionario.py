@@ -1,10 +1,10 @@
-my_dict = {}
+my_dict = dict()
 
-for i in range(1, 4):
+for i in range(1, 3 + 1):
     key = input("Enter Key: ")
     value = input("Enter Value: ")
-    i = {value, key}
-    my_dict.items([i])
+    i = {key, value}
+    my_dict.update([i])
 
 
 print(my_dict)
