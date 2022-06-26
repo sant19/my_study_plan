@@ -55,7 +55,7 @@ class Player:
     def __init__(self, type):
         self.type = type
         self.name = self.get_name()
-    
+
     def get_name(self):
         if self.type == 'X':
             name = input('Player selecting X, enter your name: ')
@@ -87,7 +87,7 @@ class Game:
                 # the user selected position is not already filled
                 if self.board.update_board(position, self.current_player.type):
                     self.board.print_board()
-                    
+
                     # checking winner each time after updating the board 
                     if self.board.check_winner(self.current_player.type):
                         print(self.current_player.name, 'wins!')

@@ -9,7 +9,7 @@ text = input("EDigite o texto para gera QR code: ")
 # we will use our text as an argument
 qr_code = pyqrcode.create(text)
 
-# calling the svg() method of the qr_code object 
+# calling the svg() method of the qr_code object
 # creates the file named qr_code.svg in svg format
 # the scale argument sets how large to draw a single image
-qr_code.svg('qr_code.svg', scale = 8)
+qr_code.svg('qr_code.svg', scale=8)
